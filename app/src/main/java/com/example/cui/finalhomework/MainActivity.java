@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.shanshan.notes.DisplayActivity;
+import com.example.shanshan.notes.NotesActivity;
+
 import java.io.InputStream;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button start_law_search;
     private Button start_url;
+    private Button notes;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,8 +47,11 @@ public class MainActivity extends AppCompatActivity {
         initlaw();
 
         sqlhelp sqldb=new sqlhelp(getApplicationContext());
+
         start_law_search=(Button)findViewById(R.id.button_start_search);
         start_url=(Button)findViewById(R.id.button_url);
+        notes=(Button)findViewById(R.id.button_notes);
+
         start_law_search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,6 +63,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent it1=new Intent(MainActivity.this,Urls.class);
+                startActivity(it1);
+            }
+        });
+
+        notes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it1=new Intent(MainActivity.this,DisplayActivity.class);
                 startActivity(it1);
             }
         });

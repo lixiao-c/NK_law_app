@@ -26,13 +26,13 @@
 
     <!-- 在中间图片的右边 -->
     <Button
-        android:id="@+id/img3"
+        android:id="@+id/button_notes"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_centerVertical="true"
         android:layout_toRightOf="@id/img1"
         android:alpha="0.8"
-        android:text="右"
+        android:text="我的\n笔记"
         android:textSize="20sp" />
 
     <!-- 在中间图片的上面-->

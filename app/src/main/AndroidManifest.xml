@@ -16,11 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".search" />
         <activity android:name=".Search" />
         <activity android:name=".display_undefinedlaw_search" />
         <activity android:name=".law_detail" />
-        <activity android:name=".Urls"></activity>
+        <activity android:name=".Urls"/>
+        <activity android:name="com.example.shanshan.notes.NotesActivity"/>
+        <activity android:name="com.example.shanshan.notes.DisplayActivity"/>
+        <activity android:name="com.example.shanshan.notes.UpdateActivity"/>
+        <activity android:name="com.example.shanshan.notes.SearchActivity">
+        </activity>
     </application>
 
 </manifest>
