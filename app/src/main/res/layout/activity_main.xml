@@ -37,13 +37,13 @@
 
     <!-- 在中间图片的上面-->
     <Button
-        android:id="@+id/img4"
+        android:id="@+id/quiz_module"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_above="@id/img1"
         android:layout_centerHorizontal="true"
         android:alpha="0.8"
-        android:text="上"
+        android:text="司考\n测试"
         android:textSize="20sp" />
 
     <!-- 在中间图片的下面 -->

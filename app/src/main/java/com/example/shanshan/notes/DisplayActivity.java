@@ -89,7 +89,7 @@ public class DisplayActivity extends ListActivity {
                 });
                 AlertDialog ad1=builder1.create();
                 ad1.show();
-                return false;
+                return true;
             }
         });
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

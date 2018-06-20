@@ -49,8 +49,9 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public void deleteall(){ //清空数据库
         SQLiteDatabase db = getWritableDatabase();
-        String sql="delete * from "+TBL_NAME;
-        db.execSQL(sql);
+        //String sql="delete * from "+TBL_NAME;
+        //db.execSQL(sql);
+        db.delete(TBL_NAME,null,null);//返回删除的数量
     }
 
     public  void deletetable(){

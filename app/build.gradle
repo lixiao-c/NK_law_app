@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.example.cui.finalhomework"
-        minSdkVersion 21
+        minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -16,6 +16,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+}
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:27.1.1'
 }
 
 dependencies {

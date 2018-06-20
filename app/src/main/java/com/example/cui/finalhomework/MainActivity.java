@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.example.shanshan.notes.DisplayActivity;
 import com.example.shanshan.notes.NotesActivity;
+import com.example.shuo.quiz.QuizMainActivity;
 
 import java.io.InputStream;
 
@@ -25,10 +26,12 @@ public class MainActivity extends AppCompatActivity {
         switch(item.getItemId())
         {
             case R.id.user_note:
-                //添加跳转
+                Intent it_user=new Intent(MainActivity.this,user.class);
+                startActivity(it_user);
                 break;
             case R.id.programmer:
-                //添加跳转
+                Intent it_inf=new Intent(MainActivity.this,programmer_inf.class);
+                startActivity(it_inf);
                 break;
             default:
         }
@@ -38,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private Button start_law_search;
     private Button start_url;
     private Button notes;
+    private Button quiz_module;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         start_law_search=(Button)findViewById(R.id.button_start_search);
         start_url=(Button)findViewById(R.id.button_url);
         notes=(Button)findViewById(R.id.button_notes);
+        quiz_module = (Button) findViewById(R.id.quiz_module);
 
         start_law_search.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,6 +77,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent it1=new Intent(MainActivity.this,DisplayActivity.class);
                 startActivity(it1);
+            }
+        });
+
+        quiz_module.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, QuizMainActivity.class);
+                startActivity(intent);
             }
         });
     }

@@ -19,12 +19,15 @@
         <activity android:name=".Search" />
         <activity android:name=".display_undefinedlaw_search" />
         <activity android:name=".law_detail" />
-        <activity android:name=".Urls"/>
-        <activity android:name="com.example.shanshan.notes.NotesActivity"/>
-        <activity android:name="com.example.shanshan.notes.DisplayActivity"/>
-        <activity android:name="com.example.shanshan.notes.UpdateActivity"/>
-        <activity android:name="com.example.shanshan.notes.SearchActivity">
-        </activity>
+        <activity android:name=".Urls" />
+        <activity android:name="com.example.shanshan.notes.NotesActivity" />
+        <activity android:name="com.example.shanshan.notes.DisplayActivity" />
+        <activity android:name="com.example.shanshan.notes.UpdateActivity" />
+        <activity android:name="com.example.shanshan.notes.SearchActivity" />
+        <activity android:name="com.example.shuo.quiz.QuizMainActivity" />
+        <activity android:name="com.example.shuo.quiz.QuizProgressActivity" />
+        <activity android:name=".programmer_inf" />
+        <activity android:name=".user"></activity>
     </application>
 
 </manifest>
